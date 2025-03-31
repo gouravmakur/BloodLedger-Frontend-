@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: process.env.REACT_APP_BASEURL || "http://localhost:5000", // Fallback URL
+  baseURL: process.env.REACT_APP_BASEURL+"/api/v1", // Fallback URL
 });
 
 // Request Interceptor - Attach Token to Requests
